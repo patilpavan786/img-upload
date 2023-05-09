@@ -1,0 +1,69 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 2rem;
+    padding-bottom: 10px;
+  
+  }
+  .addImages {
+    display: none;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  
+  .card img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .uploadTime {
+    margin: 0;
+  }
+  
+  .likeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .likeCount {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .likeBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #4d4d4d;
+  }
+  

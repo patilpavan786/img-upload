@@ -45,16 +45,17 @@
 
 .card img {
   height: 250px;
-  width: 250px;
+  width: 300px;
   object-fit: cover;
 }
 .cardInfo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
   width: 100%;
+  gap: 2rem;
 }
 
 .uploadTime {
@@ -70,7 +71,7 @@
 
 .likeCount {
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -78,8 +79,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-left: 5px;
-  font-size: 20px;
+  /* margin-left: 5px; */
+  font-size: 14px;
   color: #4d4d4d;
 }
 

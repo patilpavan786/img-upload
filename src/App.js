@@ -86,8 +86,7 @@ const App = () => {
               <div key={image.url} className={styles.card}>
                 <img src={image.url} alt="upload" />
                 <div className={styles.cardInfo}>
-                  <p className={styles.uploadTime}>Uploaded at {image.time}</p>
-                  <div className={styles.likeContainer}>
+                <div className={styles.likeContainer}>
                     <p className={styles.likeCount}>{image.likes}</p>
                     <button
                       className={styles.likeBtn}
@@ -98,6 +97,8 @@ const App = () => {
                       </span>
                     </button>
                   </div>
+                  <p className={styles.uploadTime}>Uploaded at {image.time}</p>
+                 
                 </div>
 
               </div>

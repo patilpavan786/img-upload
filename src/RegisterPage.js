@@ -34,7 +34,7 @@ export default  function SignUp() {
       return;
     }
 
-    // everything is valid
+
     const newContact = {
       id: nanoid(),
       name: name,
@@ -45,13 +45,13 @@ export default  function SignUp() {
 
     const previousContacts = JSON.parse(localStorage.getItem('contacts')) || [];
     let newContacts = [newContact, ...previousContacts];
-    // newContacts.reverse();
+
     localStorage.setItem('contacts', JSON.stringify(newContacts));
     setName('');
     setEmail('');
     setPhone('');
     setPassword("");
-    alert('Contact added successfully.');
+    alert('User added successfully.');
     navigate("/Home")
   };
 
@@ -68,6 +68,7 @@ export default  function SignUp() {
             onChange={(e) => {
               setName(e.target.value);
             }}
+            placeholder='name'
           />
         </section>
         <section >
@@ -80,6 +81,7 @@ export default  function SignUp() {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
+            placeholder='Email'
           />
         </section>
         <section >
@@ -91,6 +93,7 @@ export default  function SignUp() {
             onChange={(e) => {
               setPhone(e.target.value);
             }}
+            placeholder='Mobile No'
           />
         </section>
         <section >
@@ -103,6 +106,7 @@ export default  function SignUp() {
             onChange={(e) => {
               setPassword(e.target.value);
             }}
+            placeholder='Password'
           />
         </section>
         <section>
